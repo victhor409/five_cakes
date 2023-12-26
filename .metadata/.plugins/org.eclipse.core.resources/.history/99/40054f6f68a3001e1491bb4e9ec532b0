@@ -1,0 +1,17 @@
+package com.ce.dao;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.ce.dto.ProdutoDTO;
+import com.ce.model.Produto;
+
+public interface ProdutoService implements ProdutoDAO{
+	
+	 ProdutoDTO insert(Produto produto);
+	 List<ProdutoDTO> findAll();
+	 Optional<ProdutoDTO> findById(Long id);
+	 void delete (Long id);
+	 ProdutoDTO update(Produto produto);
+
+}

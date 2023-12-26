@@ -1,0 +1,11 @@
+package com.ce.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.ce.model.Produto;
+
+public interface ProdutoDAO extends JpaRepository<Produto, Long>{
+	
+	
+
+}

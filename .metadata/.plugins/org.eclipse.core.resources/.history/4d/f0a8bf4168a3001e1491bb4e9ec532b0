@@ -1,0 +1,16 @@
+package com.ce.dao;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.ce.model.Produto;
+
+public interface ProdutoService extends ProdutoDAO{
+	
+	public Produto insert(Produto produto);
+	public List<Produto> findAll();
+	public Optional<Produto> findById(Long id);
+	public void delete (Long id);
+	public Produto update(Produto produto);
+
+}
